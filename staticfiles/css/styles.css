@@ -1,0 +1,129 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Цвет фона страницы */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff; /* Цвет фона навигации */
+    color: white; /* Цвет текста */
+}
+
+h1 {
+    margin: 0;
+}
+
+.search-container {
+    display: flex;
+}
+
+#book-id {
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#search-button {
+    padding: 5px 10px;
+    background-color: #28a745; /* Цвет кнопки поиска */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #218838; /* Цвет кнопки поиска при наведении */
+}
+
+/* Стили для бургер-меню */
+.burger-menu {
+    display: none; /* Скрыть бургер-меню по умолчанию */
+    cursor: pointer;
+}
+
+.burger-line {
+    width: 25px;
+    height: 3px;
+    background-color: white; /* Цвет линий бургер-меню */
+    margin: 5px 0;
+}
+
+/* Стили для меню */
+.menu {
+    display: flex;
+    flex-direction: column; /* Меню будет вертикальным */
+    position: absolute;
+    top: 60px; /* Расположить меню ниже навигации */
+    left: 0;
+    right: 0;
+    background-color: #007bff; /* Цвет фона меню */
+    padding: 10px 0;
+    display: none; /* Скрыть меню по умолчанию */
+    z-index: 1;
+}
+
+.menu.active {
+    display: block; /* Показать меню при активном состоянии */
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Вертикальная компоновка */
+}
+
+.menu li {
+    margin: 5px 0; /* Отступы между элементами меню */
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white; /* Цвет текста */
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: block; /* Занимать всю ширину */
+}
+
+.menu li a:hover {
+    background-color: #0056b3; /* Цвет фона при наведении */
+}
+
+/* Стили для контейнера книг */
+#books-container {
+    padding: 20px;
+}
+
+.book-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .menu {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+    }
+
+    .burger-menu {
+        display: block; /* Показать бургер-меню на маленьких экранах */
+    }
+
+    .menu ul {
+        flex-direction: column; /* Вертикальная компоновка для мобильных устройств */
+    }
+}

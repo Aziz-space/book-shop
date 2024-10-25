@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+        <div class="title-container">
+            <h1>Все наши книги</h1>
+        </div>
+    <div class="main-container">
+        <div id="filter-container">
+            <h2>Фильтры</h2>
+            <p>Фильтр по категориям</p>
+            <div id="category-checkboxes">
+            
+            </div>
+    
+            <p>Фильтр по авторам</p>
+            <div id="author-checkboxes">
+              
+            </div>
+    
+            <p>Фильтр по тегам</p>
+            <div id="tag-checkboxes">
+               
+            </div>
+
+            <button id="filter-button">Фильтровать</button>
+        </div>
+
+        <div id="books-container">
+
+        </div>
+        
+    </div>
+
+    <div id="pagination-container" class="pagination-container">
+           
+    </div>
+
+   
+    <div id="book-detail-container" class="book-detail-container" style="display: none;">
+        <div id="book-detail" class="book-detail"></div>
+    </div>
+
+   
+    <div id="my-books-container" style="display: none;">
+        <h2>Мои книги</h2>
+        <button id="add-book-button">Добавить книгу</button>
+        <div id="user-books">
+
+        </div>
+    </div>
+{% endblock %}

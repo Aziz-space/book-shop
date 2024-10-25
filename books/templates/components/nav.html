@@ -1,0 +1,48 @@
+<nav>
+    <div class="container">
+        <a href="/">
+            <img class="logo" src="static/img/logo.png" alt="Логотип">
+        </a>
+        <div class="menu-links">
+            <ul class="nav-links">
+                <li><a href="/">Главная</a></li>
+                <ul id="category-links"></ul>
+            </ul>
+        </div>
+        <div class="user-container" id="user-container">
+            <ul class="nav-links">
+                <li class="avatar-img" id="user-avatar">
+                    <img id="avatar" 
+                        src="/static/img/default-avatar.jpg" 
+                        alt="Аватар" 
+                        class="avatar-img" 
+                       
+                        style="cursor: pointer;" />
+                </li>
+                <li id="logout-link"><a href="#" id="logout-button">Выход</a></li>
+                <li id="login-link"><button id="login-button">Вход</button></li>
+                <li id="register-link"><button id="register-button">Регистрация</button></li>
+            </ul>
+        </div>
+        <div class="search-container">
+            <form id="search-form">
+                <input type="text" id="search-query" placeholder="что хотите почитать?" />
+                <button type="submit">Поиск</button>
+            </form>
+        </div>
+        <div class="burger-menu" id="burger-menu">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+    </div>
+    <div id="profile" style="display:none;">
+  
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="/">Главная</a></li>
+            <ul id="mobile-category-links"></ul>
+        </ul>
+    </div>
+</nav>
